@@ -4,7 +4,6 @@ public class Array {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        
         System.out.print("Masukkan jumlah mata kuliah: ");
         int jumlahMK = scanner.nextInt();
         scanner.nextLine(); 
@@ -55,14 +54,12 @@ public class Array {
             totalSKS += sksMK[i];
         }
 
-        
         double ipSemester = totalBobotNilai / totalSKS;
         System.out.println("\nHasil Konversi Nilai:");
         System.out.printf("%-30s %-15s %-10s %-10s\n", "Mata Kuliah", "Nilai Angka", "Nilai Huruf", "Bobot SKS");
         for (int i = 0; i < jumlahMK; i++) {
             System.out.printf("%-30s %-15.2f %-10s %-10d\n", namaMK[i], nilaiAngka[i], nilaiHuruf[i], sksMK[i]);
         }
-
-        System.out.printf("\nIP Semester: %.2f\n", ipSemester);
+         System.out.printf("\nIP Semester: %.2f\n", ipSemester);
     }
 }

@@ -1,17 +1,13 @@
 public class Fungsi {
     public static void main(String[] args) {
-        // Data stok bunga di setiap cabang
         int[][] stockBunga = {
-            {10, 5, 15, 7},  // RoyalGarden 1
-            {6, 11, 9, 12},  // RoyalGarden 2
-            {2, 10, 10, 5},  // RoyalGarden 3
-            {5, 7, 12, 9}    // RoyalGarden 4
+            {10, 5, 15, 7}, 
+            {6, 11, 9, 12},  
+            {2, 10, 10, 5},  
+            {5, 7, 12, 9}    
         };
 
-      
         int[] hargaBunga = {75000, 50000, 60000, 10000};
-
-       
         int[] penguranganStok = {-1, -2, 0, -5};
 
         System.out.println("=== Pendapatan Setiap Cabang Jika Semua Bunga Terjual ===");
@@ -25,7 +21,6 @@ public class Fungsi {
         tampilkanTotalStok(stockBunga);
     }
 
-    
     public static void tampilkanPendapatan(int[][] stockBunga, int[] hargaBunga) {
         for (int i = 0; i < stockBunga.length; i++) {
             int pendapatan = 0;
@@ -36,7 +31,6 @@ public class Fungsi {
         }
     }
 
- 
     public static void tampilkanTotalStok(int[][] stockBunga) {
         int totalAglonema = 0, totalKeladi = 0, totalAlocasia = 0, totalMawar = 0;
 
@@ -53,7 +47,6 @@ public class Fungsi {
         System.out.println("Mawar: " + totalMawar);
     }
 
-    
     public static void kurangiStok(int[][] stockBunga, int[] penguranganStok) {
         for (int i = 0; i < stockBunga.length; i++) {
             for (int j = 0; j < stockBunga[i].length; j++) {

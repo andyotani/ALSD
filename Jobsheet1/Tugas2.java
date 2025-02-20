@@ -14,8 +14,7 @@ public class Tugas2 {
     public static double hitungVolume(double sisi) {
         return sisi * sisi * sisi;
     }
-
-
+    
     public static double hitungLuasPermukaan(double sisi) {
         return 6 * sisi * sisi;
     }

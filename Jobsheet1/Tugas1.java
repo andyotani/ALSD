@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class Tugas1 {
     public static void main(String[] args) {
         char[] kode = {'A', 'B', 'D', 'E', 'F', 'G', 'H', 'L', 'N', 'T'};
-        
-        // Array nama kota sesuai kode plat
         String[] kota = {
             "BANTEN", 
             "JAKARTA", 
