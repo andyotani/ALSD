@@ -36,7 +36,7 @@ The solution is implemented in Array.java, and below is screenshot of the result
 ![Screenshot](img3.png)
 
 **Brief explanaton:** There are 4 main step: 
-1. 1. Program to calculate semester GPA
+1. Program to calculate semester GPA
 2. Input the numerical value of each course
 3. Convert course grades
 4. Decide the final status gpa 
@@ -64,7 +64,10 @@ The solution is implemented in Tugas 1, and below is screenshot of the result.
 ![Screenshot](img6.png)
 
 **Brief explanaton:** There are 4 main step: 
-
+1. User Input
+2. Check License Plate Code
+3. Display Result
+4. End or Repeat
 
 
 ## Tugas 2
@@ -73,7 +76,10 @@ The solution is implemented in Fungsi.java, and below is screenshot of the resul
 ![Screenshot](img7.png)
 
 **Brief explanaton:** There are 4 main step: 
-1.
+1. Display Menu : Show options for cube calculations (Volume, Surface Area, Perimeter, Exit).
+2. User Input : User selects an option and enters the cube's side length. 
+3. Perform Calculation : Compute the chosen property (Volume = 𝑠 3 s 3 , Surface Area = 6 𝑠 2 6s 2 , Perimeter = 12 𝑠 12s). 
+4. Display Result & Repeat/Exit : Show the result, then loop back to the menu or exit if selected.
 
 ## Tugas 3
 The solution is implemented in Fungsi.java, and below is screenshot of the result.
@@ -82,5 +88,8 @@ The solution is implemented in Fungsi.java, and below is screenshot of the resul
 ![Screenshot](img9.png)
 ![Screenshot](img10.png)
 
-**Brief explanaton:** There are 4 main step: 
-1. 
+**Brief explanaton:** There are 3 main step: 
+1. Enter the number of courses, credits, semesters, and lecture days
+2. Display the entire lecture schedule, by day, by semester, and search for courses
+3. The last one is to exit from the previous options
+
