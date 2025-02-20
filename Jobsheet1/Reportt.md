@@ -48,18 +48,37 @@ The solution is implemented in Fungsi.java, and below is screenshot of the resul
 ![Screenshot](img4.png)
 
 **Brief explanaton:** There are 4 main step: 
-1. 
-2. 
-3. 
+1. Calculate Reveneue Per Branch 
+2. Calculate Total Stock of Flowers
+3. Adjust Stock Due to Flower Loss
+4. Display Updated Stock
 
 
 
 ## Assignments
 
 ## Tugas 1
+The solution is implemented in Tugas 1, and below is screenshot of the result.
+
+![Screenshot](img4.png)
+
+**Brief explanaton:** There are 4 main step: 
+
 
 
 ## Tugas 2
+The solution is implemented in Fungsi.java, and below is screenshot of the result.
+
+![Screenshot](img4.png)
+
+**Brief explanaton:** There are 4 main step: 
+1.
 
 
 ## Tugas 3
+The solution is implemented in Fungsi.java, and below is screenshot of the result.
+
+![Screenshot](img4.png)
+
+**Brief explanaton:** There are 4 main step: 
+1. 
