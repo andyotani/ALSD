@@ -54,13 +54,14 @@ The solution is implemented in Fungsi.java, and below is screenshot of the resul
 4. Display Updated Stock
 
 
-
+ 
 ## Assignments
 
 ## Tugas 1
 The solution is implemented in Tugas 1, and below is screenshot of the result.
 
-![Screenshot](img4.png)
+![Screenshot](img5.png)
+![Screenshot](img6.png)
 
 **Brief explanaton:** There are 4 main step: 
 
@@ -69,16 +70,17 @@ The solution is implemented in Tugas 1, and below is screenshot of the result.
 ## Tugas 2
 The solution is implemented in Fungsi.java, and below is screenshot of the result.
 
-![Screenshot](img4.png)
+![Screenshot](img7.png)
 
 **Brief explanaton:** There are 4 main step: 
 1.
 
-
 ## Tugas 3
 The solution is implemented in Fungsi.java, and below is screenshot of the result.
 
-![Screenshot](img4.png)
+![Screenshot](img8.png)
+![Screenshot](img9.png)
+![Screenshot](img10.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. 
