@@ -1,2 +1,2 @@
-# TugasAlgoritmadanStrukturData1
+# TugasAlgoritmaDanStrukturData1
 tugas
