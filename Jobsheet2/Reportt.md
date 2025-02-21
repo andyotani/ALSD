@@ -1,6 +1,6 @@
 |  | Algorithm and Data Structure |
 |--|--|
-| NIM |  1234567|
+| NIM |  244107020241|
 | Nama |  Andy Otani diop yudho |
 | Kelas | TI - 1I |
 | Repository | [link] (...) |
@@ -14,9 +14,34 @@
 
 ![Screenshot](img1.png)
 
-**Brief explanaton:** There are 4 main step: 
-1.  
+**Jawaban Pertanyaan**
+1. 
 2. 
 3. 
 4. 
+5. 
+## Percobaan 2
+
+...
+
+![Screenshot](img1.png)
+
+**Jawaban Pertanyaan**
+1. 
+2. 
+3. 
+4. 
+5. 
+##  Percobaan 3
+
+...
+
+![Screenshot](img1.png)
+
+**Jawaban Pertanyaan**
+1. 
+2. 
+3. 
+4. 
+5. 
 
