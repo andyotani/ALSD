@@ -1,17 +1,28 @@
 public class Mahasiswa04 {
-        String nama;
+        String nama; //atribut
         String nim;
         String kelas;
         double ipk;
 
-    void tampilkanInformasi(){
+    public Mahasiswa04() { //konstruktor
+
+    }
+    
+    public Mahasiswa04(String nm, String nim, double ipk, String kls){// konstruktor
+        this.nama = nm;//this dipakai untuk mereverse ke objek
+        nim = nim;
+        this.ipk = ipk;
+        this.kelas = kls;
+    }
+
+    void tampilkanInformasi(){// method
         System.out.println("Nama: " + nama);
         System.out.println("Nim: " + nim);
         System.out.println("IPK: " + ipk);
         System.out.println("Kelasa: " + kelas);
     }
 
-    void ubahKelas(String KelasBaru){
+    void ubahKelas(String KelasBaru){//method
         kelas = KelasBaru;
     }
 
