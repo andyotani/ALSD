@@ -3,7 +3,7 @@
 | NIM |  244107020241|
 | Nama |  Andy Otani Dipo Yudho |
 | Kelas | TI - 1I |
-| Repository | [link] (...) |
+| Repository | [link] (https://github.com/andyotani/ALSD/blob/main/Jobsheet2/Reportt.md) |
 
 # Labs #1 Programming Fundamentals Review
 # jOBSHEET 2
@@ -19,15 +19,15 @@
 2. Ada 4 yaitu : nama, nim, kelas, ipk. 
 3. Ada 4 yaitu : tampilkanInformasi(), ubahKelas(String KelasBaru), updateIpk(double ipkBaru), nilaiKinerja().
 4. modifikasi method updateIpk() agar hanya menerima nilai IPK dalam rentang 0.0 - 4.0:
-    ** void updateIpk(double ipkBaru) {
+    ```void updateIpk(double ipkBaru) {
     if (ipkBaru >= 0.0 && ipkBaru <= 4.0) {
         ipk = ipkBaru;
     } else {
         System.out.println("IPK tidak valid. Harus antara 0.0 dan 4.0");
     }
 }
+```     ``
 
-    **
 5. Method nilaiKinerja() berfungsi untuk mengevaluasi kinerja mahasiswa berdasarkan nilai IPK yang dimilikinya.
 Kriteria Evaluasinya: 
 IPK ≥ 3.5 → "Kinerja Sangat Baik"
@@ -41,7 +41,7 @@ Method ini mengembalikan nilai String, yang berisi evaluasi kinerja mahasiswa be
 
 ...
 
-![Screenshot](.png)
+![Screenshot](img2.png)
 
 **Jawaban Pertanyaan**
 1.  **  public Mahasiswa04(String nm, String nim, double ipk, String kls) {
@@ -73,7 +73,7 @@ kelas = "TI 2L"
 
 ...
 
-![Screenshot](.png)
+![Screenshot](img3.png)
 
 **Jawaban Pertanyaan**
 1. 

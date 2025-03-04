@@ -18,4 +18,4 @@ public class MahasiswaMain04 {
         mhs2.updateIpk(3.60);
         mhs2.tampilkanInformasi();
     }
-}
+}   
