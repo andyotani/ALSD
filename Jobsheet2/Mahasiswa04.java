@@ -1,10 +1,10 @@
 public class Mahasiswa04 {
-        String nama; //atribut
+        String nama; //atribut menunjukan variabel
         String nim;
         String kelas;
         double ipk;
 
-    public Mahasiswa04() { //konstruktor
+    public Mahasiswa04() { //konstruktor membentuk objek
 
     }
     
@@ -15,7 +15,7 @@ public class Mahasiswa04 {
         this.kelas = kls;
     }
 
-    void tampilkanInformasi(){// method
+    void tampilkanInformasi(){// method menunjukkan proses
         System.out.println("Nama: " + nama);
         System.out.println("Nim: " + nim);
         System.out.println("IPK: " + ipk);
