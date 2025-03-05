@@ -76,11 +76,40 @@ kelas = "TI 2L"
 ![Screenshot](img3.png)
 
 **Jawaban Pertanyaan**
-1. 
-2. 
-3. 
-4. 
-5. 
+1. ``
+    public Mahasiswa04(String nm, String nim, double ipk, String kls) {
+    this.nama = nm;
+    this.nim = nim;
+    this.ipk = ipk;
+    this.kelas = kls;
+}
+
+``
+    Konstruktor ini digunakan untuk menginisialisasi objek Mahasiswa04 dengan nilai tertentu saat objek dibuat.
+2. - Membuat objek mhs2 dari kelas Mahasiswa04.
+   - Menggunakan konstruktor berparameter untuk langsung mengisi atribut nama, nim, ipk, dan kelas.
+   - Nilai "Annisa Nabila", "2141720160", 3.25, dan "TI 2L" langsung diberikan ke dalam atribut nama, nim, ipk, dan kelas saat objek mhs2 dibuat.
+3. maka akan terjadi eror 
+   Karena tidak ada konstruktor default, Java tidak akan secara otomatis membuatnya jika ada konstruktor lain yang dideklarasikan.
+   Oleh karena itu, ketika kita mencoba membuat objek mhs1 dengan konstruktor tanpa parameter, program akan gagal dikompilasi karena Java tidak dapat menemukan konstruktor yang cocok.    
+4. Tidak, method dalam class Mahasiswa tidak harus diakses secara berurutan setelah instansiasi objek.
+    Alasannya:
+
+    Pemanggilan method bersifat independen, sehingga bisa dipanggil kapan saja sesuai kebutuhan.
+    Eksekusi method tergantung pada urutan pemanggilan dalam main(), bukan urutan deklarasi di dalam class.
+    Namun, ada pengecualian jika method saling bergantung, misalnya:
+    Method tampilkanInformasi() akan mencetak data mahasiswa, sehingga harus dipanggil setelah atribut diinisialisasi.
+    Jika updateIpk() dipanggil setelah tampilkanInformasi(), maka IPK yang ditampilkan tidak akan diperbarui.
+5.  ``
+    Mahasiswa04 mhsAndyO = new Mahasiswa04("Andy O", "244107020241", 3.75, "TI 1H");
+
+``
+mhsRizkyAndika adalah nama objek.
+"Andy O" adalah nama mahasiswa.
+"2241729999" adalah NIM.
+3.75 adalah IPK.
+"TI 2M" adalah kelas.
+Jika ada nama mahasiswa lain, cukup ganti "Andy O" dengan nama tersebut.
 
 
 # Latihan

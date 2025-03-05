@@ -10,7 +10,7 @@ public class Mahasiswa04 {
     
     public Mahasiswa04(String nm, String nim, double ipk, String kls){// konstruktor
         this.nama = nm;//this dipakai untuk mereverse ke objek
-        nim = nim;
+        this.nim = nim;
         this.ipk = ipk;
         this.kelas = kls;
     }
