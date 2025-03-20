@@ -14,10 +14,17 @@ public class PangkatMain {
             int pangkat = input.nextInt();
             png[i] = new Pangkat(basis, pangkat);
         }
-        System.out.print("HASIL PANGKAT BRUTEFORCE: ");
-        for(Pangkat p : png){
-            System.out.println(p.nilai+"^"+p.Pangkat+": "+p.PangkatBF);
+
+        System.out.println("HASIL PANGKAT BRUTEFORCE:");
+        for (Pangkat p : png) {
+            System.out.println(p.nilai + "^" + p.pangkat + ": " + p.pangkatBF(p.nilai, p.pangkat));
         }
+
+        System.out.println("HASIL PANGKAT DIVIDE AND CONQUER:");
+            for (Pangkat p : png) {
+        System.out.println(p.nilai + "^" + p.pangkat + ": " + p.pangkatDC(p.nilai, p.pangkat));
+        }
+
 
 
     }
