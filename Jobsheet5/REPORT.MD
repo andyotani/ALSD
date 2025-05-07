@@ -3,14 +3,14 @@
 | NIM |  244107020241|
 | Nama |  Andy Otani Dipo Yudho |
 | Kelas | TI - 1I |
-| Repository | [link] () |
+| Repository | [link] (https://github.com/andyotani/ALSD/blob/main/Jobsheet5/REPORT.MD) |
 
 # Labs #1 Programming Fundamentals Review
 # jOBSHEET Praktikum 05
 
 ## Percobaan 1
 
-...
+...p
 
 ![Screenshot](.png)
 
