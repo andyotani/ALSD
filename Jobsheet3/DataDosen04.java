@@ -4,7 +4,7 @@ public class DataDosen04 {
     String[] gender;
     int dosenPria = 0;
     int dosenWanita = 0;
-    DataDosen04 (Dosen25[] dosen) {
+    DataDosen04 (Dosen04[] dosen) {
         this.dosen = dosen;
         this.gender = new String[dosen.length];
     }
