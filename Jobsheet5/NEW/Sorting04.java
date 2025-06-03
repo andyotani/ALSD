@@ -1,4 +1,4 @@
-package Jobsheet5.Praktikum05.Praktikum1;
+package NEW;
 
 public class Sorting04 {
     int [] data;

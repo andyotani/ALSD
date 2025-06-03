@@ -1,3 +1,4 @@
+package NEW;
 class Dosen {
     String kode;
     String nama;

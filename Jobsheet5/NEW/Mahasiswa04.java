@@ -1,4 +1,4 @@
-package Jobsheet5.Praktikum05.Praktikum2;
+package NEW;
 
 public class Mahasiswa04 {
     String nim;

@@ -1,4 +1,4 @@
-package Jobsheet5.Praktikum05.Praktikum2;
+package NEW;
 
 public class MahasiswaDemo04 {
     public static void main(String[] args) {
