@@ -11,7 +11,7 @@
 
 The solution is implemented in Pemilihan.java, and below is screenshot of the result.
 
-![Screenshot](img1.png)
+![Screenshot](img/img1.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Input all grades
@@ -22,7 +22,7 @@ The solution is implemented in Pemilihan.java, and below is screenshot of the re
 ## 2.2.1. Selection Solution
 The solution is implemented in Perulangan.java, and below is screenshot of the result.
 
-![Screenshot](img2.png)
+![Screenshot](img/img2.png)
 
 **Brief explanaton:** There are 3 main step: 
 1. displays a series of numbers from 1 to n except for the numbers 6 and 10, odd numbers are printed with an   asterisk “*”
@@ -33,7 +33,7 @@ The solution is implemented in Perulangan.java, and below is screenshot of the r
 ## 2.3.1. Selection Solution
 The solution is implemented in Array.java, and below is screenshot of the result.
 
-![Screenshot](img3.png)
+![Screenshot](img/img3.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Program to calculate semester GPA
@@ -45,7 +45,7 @@ The solution is implemented in Array.java, and below is screenshot of the result
 ## 2.4.1. Selection Solution
 The solution is implemented in Fungsi.java, and below is screenshot of the result.
 
-![Screenshot](img4.png)
+![Screenshot](img/img4.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Calculate Reveneue Per Branch 
@@ -60,8 +60,8 @@ The solution is implemented in Fungsi.java, and below is screenshot of the resul
 ## Tugas 1
 The solution is implemented in Tugas 1, and below is screenshot of the result.
 
-![Screenshot](img5.png)
-![Screenshot](img6.png)
+![Screenshot](img/img5.png)
+![Screenshot](img/img6.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. User Input
@@ -73,7 +73,7 @@ The solution is implemented in Tugas 1, and below is screenshot of the result.
 ## Tugas 2
 The solution is implemented in Fungsi.java, and below is screenshot of the result.
 
-![Screenshot](img7.png)
+![Screenshot](img/img7.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Display Menu : Show options for cube calculations (Volume, Surface Area, Perimeter, Exit).
@@ -84,9 +84,9 @@ The solution is implemented in Fungsi.java, and below is screenshot of the resul
 ## Tugas 3
 The solution is implemented in Fungsi.java, and below is screenshot of the result.
 
-![Screenshot](img8.png)
-![Screenshot](img9.png)
-![Screenshot](img10.png)
+![Screenshot](img/img8.png)
+![Screenshot](img/img9.png)
+![Screenshot](img/img10.png)
 
 **Brief explanaton:** There are 3 main step: 
 1. Enter the number of courses, credits, semesters, and lecture days

@@ -1,2 +1,0 @@
-# TugasAlgoritmaDanStrukturData1
-tugas
