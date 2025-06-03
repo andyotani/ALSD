@@ -1,20 +1,21 @@
 import java.util.Scanner;
 
-public class LayananAkademikSIAKAD {
-    public static void main(String[] args) {
-       Scanner sc = new Scanner (System.in); 
-       AntrianLayanan antrian = new AntrianLayanan(5);
-       int pilihan;
-
-       do{
+public class KrsMain {
+   public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        AntrianKrs antrian = new AntrianKrs();
+        int pilihan;
+ do {
             System.out.println("\n=== Menu Antrian Layanan Akademik ===");
             System.out.println("1. Tambah Mahasiswa ke Antrian");
             System.out.println("2. Layani Mahasiswa");
             System.out.println("3. Lihat Mahasiswa Terdepan");
             System.out.println("4. Lihat Semua Antrian");
-            System.out.println("5. Jumlah Mahasiswa Dalam Antrian");
+            System.out.println("5. Jumlah Mahasiswa dalam Antrian");
+            System.out.println("6. Jumlah Mahasiswa yang Sudah Diproses");
+            System.out.println("7. Jumlah Mahasiswa yang Belum Diproses");
             System.out.println("0. Keluar");
-            System.out.print("Pilih menu : ");
+            System.out.print("Pilih menu: ");
             pilihan = sc.nextInt(); sc.nextLine();
 
             switch (pilihan) {
@@ -27,18 +28,24 @@ public class LayananAkademikSIAKAD {
                     String prodi = sc.nextLine();
                     System.out.print("Kelas : ");
                     String kelas = sc.nextLine();
+
                     Mahasiswa mhs = new Mahasiswa(nim, nama, prodi, kelas);
                     antrian.tambahAntrian(mhs);
                     break;
+
                 case 2:
-                    Mahasiswa dilayani = antrian.layaniMahasiswa();
+                    Mahasiswa dilayani[] = antrian.memanggilAntrian();
                     if (dilayani != null) {
-                        System.out.print("Melayani mahasiswa: ");
-                        dilayani.tampilkanData();
+                    System.out.println("Melayani mahasiswa: ");
+                    dilayani[0].tampilkanData();
+
+                    if (dilayani[1] != null) {
+                        dilayani[1].tampilkanData();
+                    }
                     }
                     break;
                 case 3:
-                    antrian.lihatTerdepan();
+                    antrian.lihatDuaTerdepan();
                     break;
                 case 4:
                     antrian.tampilkanSemua();
@@ -46,16 +53,19 @@ public class LayananAkademikSIAKAD {
                 case 5:
                     System.out.println("Jumlah dalam antrian: " + antrian.getJumlahAntrian());
                     break;
+                case 6:
+                    System.out.println("Mahasiswa yang sudah dalam proses : " + antrian.getTotalProsesKRS());
+                    break;
+                case 7:
+                    System.out.println("Mahasiswa yang belum diproses : " + antrian.getTotalMhsBelumDilayani());
                 case 0:
                     System.out.println("Terima kasih.");
                     break;
                 default:
                     System.out.println("Pilihan tidak valid.");
-            
-                }
-             }while (pilihan !=0);
-             sc.close(); 
-        }
-    }
-    
+            }
+        } while (pilihan != 0);
 
+        sc.close();
+    }
+}

@@ -6,7 +6,7 @@
 | Repository | [link] (https://github.com/andyotani/ALSD/tree/main/Jobsheet6) |
 
 # Labs #1 Programming Fundamentals Review
-# jOBSHEET 6
+# jOBSHEET 6 - SEARCHING
 
 ## Percobaan 1
 

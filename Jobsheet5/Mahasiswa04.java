@@ -25,5 +25,9 @@ public class Mahasiswa04 {
         System.out.println("Kelas: " + kelas);
         System.out.println("IPK: " + ipk);
     }
+    public void tampil() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'tampil'");
+    }
     
 }

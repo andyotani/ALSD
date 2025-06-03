@@ -3,14 +3,14 @@
 | NIM |  244107020241|
 | Nama |  Andy Otani Dipo Yudho |
 | Kelas | TI - 1I |
-| Repository | [link] (https://github.com/andyotani/ALSD/blob/main/Jobsheet5/REPORT.MD) |
+| Repository | [link] (...) |
 
 # Labs #1 Programming Fundamentals Review
-# jOBSHEET Praktikum 05
+# jOBSHEET Minggu 5
 
 ## Percobaan 1
 
-...p
+...
 
 ![Screenshot](.png)
 
@@ -57,7 +57,3 @@
 ...
 
 ![Screenshot](.png)
-1. 
-2.  
-3. 
-4. menggeser data dari sebelah kiri ke sebelah kanan
