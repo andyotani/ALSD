@@ -1,19 +1,31 @@
 public class DosenMain04 {
     public static void main(String[] args) {
-        Dosen04 dosen1 = new Dosen04();
+        System.out.println("DOSEN 1");
+        Dosen04 dsn1 = new Dosen04("D001", "Agus", "Daspro", true, 2018);
+        dsn1.tampilkanInformasi();
+        System.out.println("===================");
+
+        Dosen04 dsn2 = new Dosen04();
+        dsn2.idDosen = "D002";
+        dsn2.nama = "Budi";
+        dsn2.bidangKeahlian = "Desain Antarmuka";
+        dsn2.statusAktif = false;
+        dsn2.tahunBergabung = 2016;
         
-        dosen1.setStatusAktif(true);
-        dosen1.ubahKeahlian("Kecerdasan Buatan");
+        System.out.println("DOSEN 2");
+        dsn2.tampilkanInformasi();
+        System.out.println("Masa Kerja : " + dsn2.hitungMasaKerja(2025) + " tahun");
+        System.out.println();
+
+        dsn2.setStatusAktif(true);
+        dsn2.ubahKeahlian("Aljabar");
+        System.out.println("===================");
         
-        System.out.println("Informasi Dosen 1:");
-        dosen1.tampilInformasi();
+        System.out.println("PERCOBAAN METHOD");
+        dsn2.tampilkanInformasi();
+        System.out.println("Masa Kerja : " + dsn2.hitungMasaKerja(2025) + " tahun");
         
-        Dosen04 dosen2 = new Dosen04("D002", "Dr. Budi", true, 2010, "Jaringan Komputer");
-        
-        System.out.println("\nInformasi Dosen 2:");
-        dosen2.tampilInformasi();
-        
-        int masaKerja = dosen2.hitungMasaKerja(2025);
-        System.out.println("Masa kerja Dosen 2: " + masaKerja + " tahun");
+
+
     }
 }

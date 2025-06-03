@@ -1,47 +1,42 @@
+class MataKuliah04 {
+    String kodeMk, nama;
+    int sks, jumlahJam;
 
-public class MataKuliah04 {
-    private String kodeMK;
-    private String nama;
-    private int sks;
-    private int jumlahJam;
+    MataKuliah04() {
 
-    public MataKuliah04() {
-        this.kodeMK = "";
-        this.nama = "";
-        this.sks = 0;
-        this.jumlahJam = 0;
     }
-
-    public MataKuliah04(String kodeMK, String nama, int sks, int jumlahJam) {
-        this.kodeMK = kodeMK;
-        this.nama = nama;
+    
+    MataKuliah04(String kodeMk, String nama, int sks, int jumlahJam) {
+        this.kodeMk = kodeMk;
+        this.nama = nama;   
         this.sks = sks;
         this.jumlahJam = jumlahJam;
     }
 
-    public void tampilInformasi() {
-        System.out.println("Kode MK: " + kodeMK);
-        System.out.println("Nama: " + nama);
-        System.out.println("SKS: " + sks);
-        System.out.println("Jumlah Jam: " + jumlahJam);
+    void tampilkanInformasi() {
+        System.out.println("Kode MK : " + this.kodeMk);
+        System.out.println("Nama Mk : " + this.nama);
+        System.out.println("Jumlah SKS : " + this.sks);
+        System.out.println("Jumlah Jam : " + this.jumlahJam);
     }
 
-    public void ubahSKS(int sksBaru) {
+    void ubahSks(int sksBaru) {
         this.sks = sksBaru;
-        System.out.println("SKS telah diubah menjadi " + sks);
     }
 
-    public void tambahJam(int jam) {
+    void tambahJam (int jam) {
         this.jumlahJam += jam;
-        System.out.println("Jumlah jam bertambah, sekarang: " + jumlahJam);
     }
 
-    public void kurangiJam(int jam) {
-        if (this.jumlahJam >= jam) {
-            this.jumlahJam -= jam;
-            System.out.println("Jumlah jam berkurang, sekarang: " + jumlahJam);
-        } else {
-            System.out.println("Pengurangan jam tidak dapat dilakukan, jumlah jam tidak mencukupi.");
+    void kurangiJam (int jam) {
+        if (jam > this.jumlahJam) {
+            System.out.println("Jumlah jam tidak valid! Harus antara 0 - " + this.jumlahJam);
+            return;
         }
+        this.jumlahJam -= jam;
     }
+
+
+    
 }
+

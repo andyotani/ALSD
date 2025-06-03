@@ -1,43 +1,40 @@
-public class Dosen04 {
-    private String idDosen;
-    private String nama;
-    private boolean statusAktif;
-    private int tahunBergabung;
-    private String bidangKeahlian;
+class Dosen04 {
+    String idDosen, nama, bidangKeahlian;
+    boolean statusAktif;
+    int tahunBergabung;
 
-    public Dosen04() {
-        this.idDosen = "";
-        this.nama = "";
-        this.statusAktif = false;
-        this.tahunBergabung = 0;
-        this.bidangKeahlian = "";
+    Dosen04 () {
+
     }
 
-    public Dosen04(String idDosen, String nama, boolean statusAktif, int tahunBergabung, String bidangKeahlian) {
+    Dosen04 (String idDosen, String nama, String bidangKeahlian, boolean statusAktif, int tahunBergabung) {
         this.idDosen = idDosen;
         this.nama = nama;
+        this.bidangKeahlian = bidangKeahlian;
         this.statusAktif = statusAktif;
         this.tahunBergabung = tahunBergabung;
+    }
+
+
+    void tampilkanInformasi() {
+        System.out.println("ID Dosen : " + this.idDosen);
+        System.out.println("Nama Dosen : " + this.nama);
+        System.out.println("Bidang Keahlian : " + this.bidangKeahlian);
+        System.out.println("Status Aktif : " + this.statusAktif);
+        System.out.println("Tahun Bergabung : " + this.tahunBergabung);
+    }
+
+    void setStatusAktif(boolean statusAktif) {
+        this.statusAktif = statusAktif;
+    }
+
+    int hitungMasaKerja (int tahunSkrg) {
+        return tahunSkrg - this.tahunBergabung;
+    }
+
+    void ubahKeahlian (String bidangKeahlian) {
         this.bidangKeahlian = bidangKeahlian;
     }
-
-    public void tampilInformasi() {
-        System.out.println("ID Dosen: " + idDosen);
-        System.out.println("Nama: " + nama);
-        System.out.println("Status Aktif: " + (statusAktif ? "Aktif" : "Tidak Aktif"));
-        System.out.println("Tahun Bergabung: " + tahunBergabung);
-        System.out.println("Bidang Keahlian: " + bidangKeahlian);
-    }
-
-    public void setStatusAktif(boolean status) {
-        this.statusAktif = status;
-    }
-
-    public int hitungMasaKerja(int thnSkrg) {
-        return thnSkrg - tahunBergabung;
-    }
-
-    public void ubahKeahlian(String bidang) {
-        this.bidangKeahlian = bidang;
-    }
+    
 }
+

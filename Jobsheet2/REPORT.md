@@ -56,12 +56,12 @@ Fungsi konstruktor ini:
 Menerima parameter nama, nim, ipk, dan kelas untuk langsung menginisialisasi atribut objek Mahasiswa04.
 Menggunakan this untuk membedakan atribut kelas dan parameter dengan nama yang sama
 2. - new Mahasiswa04(...) memanggil konstruktor berparameter untuk membuat objek mhs2 dengan atribut yang langsung diinisialisasi:
-
 nama = "Annisa Nabila"
 nim = "2141720160"
 ipk = 3.25
 kelas = "TI 2L"
 - Setelah objek dibuat, method updateIpk(3.60); dan tampilkanInformasi(); dipanggil untuk memperbarui IPK dan menampilkan informasi mahasiswa. 
+
 3. Jika kita menghapus konstruktor default: public Mahasiswa04() { }
 - Java secara otomatis menyediakan konstruktor default hanya jika tidak ada konstruktor lain.
 - Namun, karena kita sudah menuliskan konstruktor berparameter, Java tidak lagi membuat konstruktor default.
@@ -69,11 +69,11 @@ kelas = "TI 2L"
 
 
 
-##  Percobaan 3
+##  Percobaan 3 - Membuat Konstruktor
 
 ...
 
-![Screenshot](img3.png)
+![Screenshot](img/img3.png)
 
 **Jawaban Pertanyaan**
 1. ``
@@ -112,13 +112,49 @@ mhsRizkyAndika adalah nama objek.
 Jika ada nama mahasiswa lain, cukup ganti "Andy O" dengan nama tersebut.
 
 
-# Latihan
+# Latihan Praktikum
 ## 1. MataKuliah
 ...
 
-![Screenshot](.png)
+![Screenshot](img/tugas1.png)
+
+### Penjelasan 
+1. **Mendeklarasikan variabel untuk menyimpan data mata kuliah:**  
+   Kelas `MataKuliah04` memiliki atribut seperti `kodeMk`, `nama`, `sks`, dan `jumlahJam` untuk menyimpan informasi tentang mata kuliah.
+
+2. **Menginisialisasi objek mata kuliah:**  
+   Objek `mk1` dibuat menggunakan constructor default, lalu atributnya diisi secara manual. Objek `mk2` dibuat menggunakan constructor dengan parameter untuk langsung menginisialisasi data.
+
+3. **Menampilkan informasi mata kuliah:**  
+   Metode `tampilkanInformasi()` digunakan untuk mencetak data mata kuliah, seperti kode mata kuliah, nama, jumlah SKS, dan jumlah jam.
+
+4. **Mengubah data mata kuliah:**  
+- Metode `ubahSks(int sksBaru)` digunakan untuk mengubah jumlah SKS mata kuliah.  
+- Metode `tambahJam(int jam)` menambahkan jumlah jam mata kuliah.  
+- Metode `kurangiJam(int jam)` mengurangi jumlah jam, dengan validasi agar pengurangan tidak melebihi jumlah jam yang tersedia.
+
+5. **Menampilkan hasil perubahan:**  
+   Setelah memanggil metode untuk mengubah data (`ubahSks`, `tambahJam`, dan `kurangiJam`), informasi mata kuliah diperbarui dan ditampilkan kembali dengan metode `tampilkanInformasi()`.
 
 ## 2. Dosen
 ...
 
-![Screenshot](.png)
+![Screenshot](img/tugas2.png)
+
+### Penjelasan 
+1. **Mendeklarasikan variabel untuk menyimpan data dosen:**  
+   Kelas `Dosen04` memiliki atribut seperti `idDosen`, `nama`, `bidangKeahlian`, `statusAktif`, dan `tahunBergabung`. Atribut ini digunakan untuk menyimpan informasi tentang dosen.
+
+2. **Menginisialisasi objek dosen:**  
+   Objek `dsn1` dibuat menggunakan constructor dengan parameter, sedangkan `dsn2` dibuat menggunakan constructor default lalu nilai atributnya diatur secara manual.
+
+3. **Menampilkan informasi dosen:**  
+   Metode `tampilkanInformasi()` digunakan untuk mencetak detail dosen, seperti ID, nama, bidang keahlian, status aktif, dan tahun bergabung.
+
+4. **Mengubah data dosen:**  
+   Objek `dsn2` mengalami perubahan status aktif menggunakan metode `setStatusAktif()` dan perubahan bidang keahlian menggunakan metode `ubahKeahlian()`.
+
+5. **Menghitung masa kerja dan menampilkan hasil:**  
+   Metode `hitungMasaKerja(int tahunSkrg)` digunakan untuk menghitung selisih antara tahun saat ini (2025) dengan tahun bergabung. Hasilnya ditampilkan bersama informasi terbaru setelah perubahan atribut.
+
+6. Program ini dibuat untuk menyimpan dan menampilkan data dosen, seperti nama, NIP, NIDN, dan jabatan akademik. Data dosen dimasukkan melalui konstruktor saat objek dibuat, kemudian ditampilkan ke layar menggunakan method tampilData(). Seluruh proses dimulai dari method main() yang ada di kelas DosenMain04. Program ini membantu menampilkan informasi dosen secara lengkap dan terstruktur menggunakan konsep objek dan method dalam Java.
