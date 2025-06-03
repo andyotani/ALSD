@@ -6,13 +6,13 @@
 | Repository | [link] (https://github.com/andyotani/ALSD/blob/main/Jobsheet2/Reportt.md) |
 
 # Labs #1 Programming Fundamentals Review
-# jOBSHEET 2
+# jOBSHEET 2 - Object
 
-## Percobaan 1
+## Percobaan 1 - Deklarasi Class, Atribut dan Method
 
 ...
 
-![Screenshot](img1.png)
+![Screenshot](img/img1.png)
 
 **Jawaban Pertanyaan**
 1. Atribut : Data yang dimiliki oleh objek. Method : Tindakan yang dapat dilakukan oleh objek
@@ -37,11 +37,11 @@ IPK < 2.0 → "Kinerja Kurang"
 Method ini mengembalikan nilai String, yang berisi evaluasi kinerja mahasiswa berdasarkan IPK yang dimiliki.
 
 
-## Percobaan 2
+## Percobaan 2 - Instansiasi Object, serta Mengakses Atribut dan Method
 
 ...
 
-![Screenshot](img2.png)
+![Screenshot](img/img2.png)
 
 **Jawaban Pertanyaan**
 1.  **  public Mahasiswa04(String nm, String nim, double ipk, String kls) {

@@ -29,5 +29,17 @@ public class Mahasiswa04 {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'tampil'");
     }
+    public void updateIpk(double d) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'updateIpk'");
+    }
+    public void tampilkanInformasi() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'tampilkanInformasi'");
+    }
+    public void ubahKelas(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'ubahKelas'");
+    }
     
 }
