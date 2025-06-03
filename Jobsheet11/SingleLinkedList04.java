@@ -1,5 +1,3 @@
-package Pertemuan12;
-
 public class SingleLinkedList04 {
     NodeMahasiswa04 head;
     NodeMahasiswa04 tail;
