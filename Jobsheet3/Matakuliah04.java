@@ -9,13 +9,13 @@ public class Matakuliah04 {
         public int jumlahJam;
         
     
-        public Matakuliah04 (String kode, String nama, int sks, int jumlahJam) {
-            this.kode = kode;
-            this.nama = nama;
-            this.sks = sks;
-            this.jumlahJam = jumlahJam;
+public Matakuliah04 (String kode, String nama, int sks, int jumlahJam) {
+        this.kode = kode;
+        this.nama = nama;
+        this.sks = sks;
+        this.jumlahJam = jumlahJam;
         }
-        public Matakuliah04() {
+public Matakuliah04() {
             //TODO Auto-generated constructor stub
         }
         public void tambahData(Scanner sc) {
@@ -29,7 +29,7 @@ public class Matakuliah04 {
         this.jumlahJam = Integer.parseInt(sc.nextLine());
         System.out.println("----------------------------------");
     }
-    public void cetakInfo() {
+public void cetakInfo() {
         System.out.println("Kode      : " + this.kode);
         System.out.println("Nama      : " + this.nama);
         System.out.println("Sks       : " + this.sks);

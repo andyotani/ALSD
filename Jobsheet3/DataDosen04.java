@@ -1,70 +1,80 @@
 package Jobsheet3;
-
 public class DataDosen04 {
+    Dosen04[] dosen;
+    String[] gender;
+    int dosenPria = 0;
+    int dosenWanita = 0;
+    DataDosen04 (Dosen25[] dosen) {
+        this.dosen = dosen;
+        this.gender = new String[dosen.length];
+    }
 
-    // a. Menampilkan semua data dosen
-    public static void dataSemuaDosen(Dosen04[] arrayOfDosen) {
-        for (Dosen04 dosen : arrayOfDosen) {
-            dosen.tampilkanInfo();
+    void dataSemuaDosen (Dosen04[] arrayOfDosen) {
+        int i = 0;
+        for (Dosen04 dsn : arrayOfDosen) {
+            System.out.println("Data Dosen ke -" + (i+1));
+            System.out.println("Kode : " + dsn.kode);
+            System.out.println("Nama : " + dsn.nama);
+            this.gender[i] = (arrayOfDosen[i].jenisKelamin == true) ? "Pria" : "Wanita";
+            System.out.println("Jenis Kelamin : " + this.gender[i]);
+            System.out.println("Usia : " + dsn.usia);
+            System.out.println("--------------------------------------");
+            i++;
         }
     }
 
-    // b. Menampilkan jumlah dosen berdasarkan jenis kelamin
-    public static void jumlahDosenPerJenisKelamin(Dosen04[] arrayOfDosen) {
-        int pria = 0, wanita = 0;
-        for (Dosen04 dosen : arrayOfDosen) {
-            if (dosen.jenisKelamin) {
-                pria++;
+    void jumlahDosenPerJenisKelamin (Dosen04[] arrayOfDosen) {
+        for (int i = 0; i < arrayOfDosen.length; i++) {
+            if (arrayOfDosen[i].jenisKelamin == true) {
+                this.dosenPria++;
             } else {
-                wanita++;
+                this.dosenWanita++;
             }
         }
-        System.out.println("Jumlah Dosen Pria   : " + pria);
-        System.out.println("Jumlah Dosen Wanita : " + wanita);
+        System.out.println("Jumlah Dosen Pria : " + this.dosenPria);
+        System.out.println("Jumlah Dosen Wanita : " + this.dosenWanita);
     }
 
-    // c. Menampilkan rata-rata usia berdasarkan jenis kelamin
-    public static void rerataUsiaDosenPerJenisKelamin(Dosen04[] arrayOfDosen) {
-        int totalUsiaPria = 0, totalUsiaWanita = 0;
-        int countPria = 0, countWanita = 0;
-
-        for (Dosen04 dosen : arrayOfDosen) {
-            if (dosen.jenisKelamin) {
-                totalUsiaPria += dosen.usia;
-                countPria++;
+    void rerataUsiaDosenPerJenisKelamin(Dosen04[] arrayOfDosen) {
+        int totalUsiaPria = 0;
+        int totalUsiaWanita = 0;
+        for (int i = 0; i < arrayOfDosen.length; i++) {
+            if (arrayOfDosen[i].jenisKelamin == true) {
+                totalUsiaPria += arrayOfDosen[i].usia;
             } else {
-                totalUsiaWanita += dosen.usia;
-                countWanita++;
+                totalUsiaWanita += arrayOfDosen[i].usia;
             }
         }
+        
+        double rerataUsiaPria = (this.dosenPria > 0) ? (double) totalUsiaPria / this.dosenPria : 0;
+        double rerataUsiaWanita = (this.dosenWanita > 0) ? (double) totalUsiaWanita / this.dosenWanita : 0;
+        
 
-        System.out.println("Rata-rata Usia Dosen Pria   : " + (countPria == 0 ? 0 : (totalUsiaPria / countPria)));
-        System.out.println("Rata-rata Usia Dosen Wanita : " + (countWanita == 0 ? 0 : (totalUsiaWanita / countWanita)));
+        System.out.println("Rata - Rata Usia Dosen Pria : " + rerataUsiaPria);
+        System.out.println("Rata - Rata Usia Dosen Wanita : " + rerataUsiaWanita);
     }
 
-    // d. Menampilkan data dosen paling tua
-    public static void infoDosenPalingTua(Dosen04[] arrayOfDosen) {
-        Dosen04 tertua = arrayOfDosen[0];
-        for (Dosen04 dosen : arrayOfDosen) {
-            if (dosen.usia > tertua.usia) {
-                tertua = dosen;
+    void infoDosenPalingTua(Dosen04[] arrayOfDosen) {
+        int dosenTertua = 0;
+        int indexDosen = 0;
+        for (int i = 0; i < arrayOfDosen.length; i++) {
+            if (arrayOfDosen[i].usia > dosenTertua) {
+                dosenTertua = arrayOfDosen[i].usia;
+                indexDosen = i;
             }
         }
-        System.out.println("Dosen Paling Tua:");
-        tertua.tampilkanInfo();
+        System.out.println("Dosen Tertua : " + arrayOfDosen[indexDosen].nama + " dengan umur " + dosenTertua + " tahun");
     }
 
-    // e. Menampilkan data dosen paling muda
-    public static void infoDosenPalingMuda(Dosen04[] arrayOfDosen) {
-        Dosen04 termuda = arrayOfDosen[0];
-        for (Dosen04 dosen : arrayOfDosen) {
-            if (dosen.usia < termuda.usia) {
-                termuda = dosen;
+    void infoDosenPalingMuda(Dosen04[] arrayOfDosen) {
+        int dosenTermuda = 1000;
+        int indexDosen = 0;
+        for (int i = 0; i < arrayOfDosen.length; i++) {
+            if (arrayOfDosen[i].usia < dosenTermuda) {
+                dosenTermuda = arrayOfDosen[i].usia;
+                indexDosen = i;
             }
         }
-        System.out.println("Dosen Paling Muda:");
-        termuda.tampilkanInfo();
+        System.out.println("Dosen Termuda : " + arrayOfDosen[indexDosen].nama + " dengan umur " + dosenTermuda + " tahun");
     }
 }
-
-
