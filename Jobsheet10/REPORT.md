@@ -50,9 +50,8 @@
 ![Screenshot](img/img2.2.png)
 
 **Jawaban Pertanyaan**
-1. ```java
-
-            void lihatAkhir() {
+1. ``` java
+    void lihatAkhir() {
             if (isEmpty()) {
                 System.out.println("antrian kosong");
             } else {
@@ -61,11 +60,17 @@
                 data[rear].tampilkanData();
             }
         }
-  ```
+      ```     
+      
 # Latihan - Tugas
-## 1. 
 
 ### Output
-...
-![Screenshot](img/tugas1.png)
+
+![Screenshot](img/latihan1.png)
+![Screenshot](img/latihan2.png)
+![Screenshot](img/latihan3.png)
+![Screenshot](img/latihan4.png)
+![Screenshot](img/latihan5.png)
+![Screenshot](img/latihan6.png)
+![Screenshot](img/latihan7.png)
 
