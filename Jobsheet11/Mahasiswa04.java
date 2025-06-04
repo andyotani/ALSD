@@ -1,23 +1,20 @@
 public class Mahasiswa04 {
-    String nim;
-    String nama;
-    String kelas;
+    String nim, nama, kelas;
     double ipk;
 
     public Mahasiswa04() {
+    }
     
-    }
-
     public Mahasiswa04(String nm, String name, String kls, double ip) {
-        nim = nm;
-        nama = name;
-        kelas = kls;
-        ipk = ip;
+        this.nim = nm;
+        this.nama = name;
+        this.kelas = kls;
+        this.ipk = ip;
     }
-    public void tampilInformasi() {
-        System.out.println("NIM   : " + nim);
-        System.out.println("Nama  : " + nama);
-        System.out.println("Kelas : " + kelas);
-        System.out.println("IPK   : " + ipk);
+    
+
+    void tampilInformasi() {
+        System.out.println(nama + "\t" + nim + "\t" + kelas + "\t" + ipk);
     }
+    
 }
