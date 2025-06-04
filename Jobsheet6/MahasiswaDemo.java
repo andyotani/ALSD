@@ -24,25 +24,27 @@ public class MahasiswaDemo {
             String kelas = sc.next();
             System.out.print("Masukkan IPK : ");
             double ipk = sc.nextDouble();
-            Mahasiswa mhs = new Mahasiswa(nim, nama, kelas, ipk);
+            Mahasiswa04 mhs = new Mahasiswa04(nim, nama, kelas, ipk);
             System.out.println("-------------------------");
             list.tambah(mhs);
         }
 
         list.tampil();
 
-        // sequential search
-        // System.out.println("Pencarian Data");
-        // System.out.println("--------------------------");
-        // System.out.print("Masukkan IPK yang dicari : ");
-        // double cari = sc.nextDouble();
+        //sequential search
+        //System.out.println("--------------------------");
+        //System.out.println("Pencarian Data");
+        //System.out.println("--------------------------");
+        //System.out.print("Masukkan IPK mahasiswa yang dicari : ");
+        //double cari = sc.nextDouble();
 
-        // System.out.println("Menggunakan sequential search");
-        // double posisi = list.sequentialSearch(cari);
-        // list.tampilPosisi(cari, (int) posisi);
-        // list.tampilDataSearch(cari, (int)posisi);
+        //System.out.println("Menggunakan sequential search");
+        //double posisi = list.sequentialSearch(cari);
+        //list.tampilPosisi(cari, (int) posisi);
+        //list.tampilDataSearch(cari, (int)posisi);
 
         // binary search
+        System.out.println("--------------------------");
         System.out.println("Pencarian Data");
         System.out.println("--------------------------");
         System.out.print("Masukkan IPK yang dicari : ");

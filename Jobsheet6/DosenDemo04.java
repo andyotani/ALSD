@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DosenMain {
+public class DosenDemo04 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class DosenMain {
             jmlDsn = sc.nextInt();
         }
 
-        DataDosen listDosen = new DataDosen(jmlDsn);
+        DataDosen04 listDosen = new DataDosen04(jmlDsn);
 
         do {
             System.out.println("==== DATA DOSEN =====");
@@ -56,7 +56,7 @@ public class DosenMain {
                 }
                 System.out.print("Masukkan usia : ");
                 int usia = sc.nextInt();
-                Dosen dsn = new Dosen(kode, nama, jenisKelamin, usia);
+                Dosen04 dsn = new Dosen04(kode, nama, jenisKelamin, usia);
                 listDosen.tambah(dsn);
                 System.out.println();
             }

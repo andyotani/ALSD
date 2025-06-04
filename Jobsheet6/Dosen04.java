@@ -1,9 +1,9 @@
-class Dosen {
+class Dosen04 {
     String kode, nama;
     Boolean jenisKelamin;
     int usia;
 
-    Dosen(String kode, String nama, Boolean jenisKelamin, int usia) {
+    Dosen04(String kode, String nama, Boolean jenisKelamin, int usia) {
         this.kode = kode;
         this.nama = nama;
         this.jenisKelamin = jenisKelamin;

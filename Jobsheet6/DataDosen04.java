@@ -1,13 +1,13 @@
-public class DataDosen {
+public class DataDosen04 {
     int idx;
-    Dosen dataDosen[];
+    Dosen04 dataDosen[];
 
-    DataDosen (int jmlDosen) {
-      dataDosen = new Dosen[jmlDosen];
+    DataDosen04 (int jmlDosen) {
+      dataDosen = new Dosen04[jmlDosen];
       idx = 0;
     }
 
-    void tambah(Dosen d) {
+    void tambah(Dosen04 d) {
         if (idx < dataDosen.length) {
             dataDosen[idx] = d;
             idx++;
@@ -17,7 +17,7 @@ public class DataDosen {
     }
 
     void tampil() {
-        for(Dosen d: dataDosen) {
+        for(Dosen04 d: dataDosen) {
             d.tampil();
             System.out.println("--------------------------");
         }
@@ -27,7 +27,7 @@ public class DataDosen {
         for (int i = 0; i < dataDosen.length-1; i++) {
             for (int j = 0; j < dataDosen.length - i - 1; j++) {
                 if (dataDosen[j].usia > dataDosen[j+1].usia) {
-                    Dosen temp = dataDosen[j];
+                    Dosen04 temp = dataDosen[j];
                     dataDosen[j] = dataDosen[j+1];
                     dataDosen[j+1] = temp;
                 }
@@ -37,7 +37,7 @@ public class DataDosen {
 
     void insertionSortAsc() {
         for (int i = 1; i < dataDosen.length; i++) {
-            Dosen temp = dataDosen[i];
+            Dosen04 temp = dataDosen[i];
             int j = i-1;
             while (j >= 0 && dataDosen[j].usia > temp.usia) {
                 dataDosen[j+1] = dataDosen[j];
@@ -55,7 +55,7 @@ public class DataDosen {
                     idxMax = j;
                 }
             }
-            Dosen tmp = dataDosen[idxMax];
+            Dosen04 tmp = dataDosen[idxMax];
             dataDosen[idxMax] = dataDosen[i];
             dataDosen[i] = tmp;
         }
@@ -77,7 +77,7 @@ public class DataDosen {
             return posisi;
         }    
 
-        int pencarianDataBinary (Dosen arr[], int target) {
+        int pencarianDataBinary (Dosen04 arr[], int target) {
                 int counter = 0;
                 int low = 0;
                 int high = arr.length - 1;
