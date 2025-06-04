@@ -48,7 +48,7 @@
 ## Percobaan 2 - Modifikasi Elemen pada Single Linked List
 ...
 
-![Screenshot](/img/img2.png)
+![Screenshot](img/img2.png)
 
 **Jawaban Pertanyaan**
 1. Agar tidak menjalankan kode dibawah nya jika sudah terpenuhi kondisi if.
