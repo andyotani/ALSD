@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class SuratDemo25 {
+public class SuratDemo04 {
     public static void main(String[] args) {
-        StackSurat25 stack = new StackSurat25(5);
+        StackSurat04 stack = new StackSurat04(5);
         Scanner sc = new Scanner(System.in);
         int pilih;
 
@@ -31,12 +31,12 @@ do {
             } while (jenisIzin != 'S' && jenisIzin != 'I');
             System.out.print("Durasi: ");
             int durasi = sc.nextInt();
-            Surat25 surat = new Surat25(idSurat, nama, kelas, jenisIzin, durasi);
+            Surat04 surat = new Surat04(idSurat, nama, kelas, jenisIzin, durasi);
             stack.push(surat);
             System.out.printf("Surat %s berhasil dikumpulkan\n", surat.namaMhs);
             break;
         case 2:
-        Surat25 suratVerif = stack.pop();
+        Surat04 suratVerif = stack.pop();
         if (suratVerif != null) {
             System.out.println("Verifikasi Surat milik " + suratVerif.namaMhs);
             suratVerif.isVerificated = true;
@@ -44,7 +44,7 @@ do {
         }
         break;
         case 3:
-        Surat25 suratTeratas = stack.peek();
+        Surat04 suratTeratas = stack.peek();
         if (suratTeratas != null) {
             System.out.println("Surat teratas milik : " + suratTeratas.namaMhs);
         }

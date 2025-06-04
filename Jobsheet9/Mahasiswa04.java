@@ -1,13 +1,13 @@
-public class Mahasiswa25 {
+public class Mahasiswa04 {
 
         String nim, nama, kelas;
         int nilai;
     
-        Mahasiswa25() {
+        Mahasiswa04() {
     
         }
     
-        Mahasiswa25(String nama, String nim, String kelas) {
+        Mahasiswa04(String nama, String nim, String kelas) {
             this.nama = nama;
             this.nim = nim;
             this.kelas = kelas;

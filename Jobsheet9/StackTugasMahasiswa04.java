@@ -1,11 +1,11 @@
-public class StackTugasMahasiswa25 {
-    Mahasiswa25[] stack;
-    int size;
+public class StackTugasMahasiswa04 {
+    Mahasiswa04[] stack;
     int top;
+    int size;
 
-    StackTugasMahasiswa25(int size) {
+    StackTugasMahasiswa04(int size) {
         this.size = size;
-        stack = new Mahasiswa25[size];
+        stack = new Mahasiswa04[size];
         top = -1;
     }
 
@@ -17,7 +17,7 @@ public class StackTugasMahasiswa25 {
         return this.top == -1;
     }
 
-    void push(Mahasiswa25 m) {
+    void push(Mahasiswa04 m) {
         if (!isFull()) {
             top++;
             stack[top] = m;
@@ -26,9 +26,9 @@ public class StackTugasMahasiswa25 {
         }
     }
 
-    Mahasiswa25 pop() {
+    Mahasiswa04 pop() {
         if(!isEmpty()) {
-           Mahasiswa25 mhs = stack[top];
+           Mahasiswa04 mhs = stack[top];
             top--;
             return mhs; 
         } else {
@@ -37,7 +37,7 @@ public class StackTugasMahasiswa25 {
         }
     } 
 
-    Mahasiswa25 peek() {
+    Mahasiswa04 peek() {
         if (!isEmpty()) {
             return stack[top];
         } else {
@@ -46,7 +46,7 @@ public class StackTugasMahasiswa25 {
         }
     }
 
-    Mahasiswa25 peekBottom() {
+    Mahasiswa04 peekBottom() {
         if (!isEmpty()) {
             return stack[0];
         } else {

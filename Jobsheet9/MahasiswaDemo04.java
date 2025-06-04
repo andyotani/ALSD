@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class MahasiswaDemo25 {
+public class MahasiswaDemo04 {
     public static void main(String[] args) {
-        StackTugasMahasiswa25 stack = new StackTugasMahasiswa25(5);
+        StackTugasMahasiswa04 stack = new StackTugasMahasiswa04(5);
         Scanner sc = new Scanner(System.in);
         int pilih;
 
@@ -26,12 +26,12 @@ do {
             String nim = sc.nextLine();
             System.out.print("Kelas: ");
             String kelas = sc.nextLine();
-            Mahasiswa25 mhs = new Mahasiswa25(nama, nim, kelas);
+            Mahasiswa04 mhs = new Mahasiswa04(nama, nim, kelas);
             stack.push(mhs);
             System.out.printf("Tugas %s berhasil dikumpulkan\n", mhs.nama);
             break;
         case 2:
-            Mahasiswa25 dinilai = stack.pop();
+            Mahasiswa04 dinilai = stack.pop();
             if (dinilai != null) {
                 System.out.println("Menilai tugas dari " + dinilai.nama);
                 System.out.print("Masukkan nilai (0-100): ");
@@ -43,13 +43,13 @@ do {
             }
             break;
         case 3:
-            Mahasiswa25 lihat = stack.peek();
+            Mahasiswa04 lihat = stack.peek();
             if (lihat != null) {
                 System.out.println("Tugas terakhir dikumpulkan oleh " + lihat.nama);
             }
             break;
             case 4:
-            Mahasiswa25 lihatTerbawah = stack.peekBottom();
+            Mahasiswa04 lihatTerbawah = stack.peekBottom();
             if (lihatTerbawah != null) {
                 System.out.println("Tugas pertama dikumpulkan oleh " + lihatTerbawah.nama);
             }

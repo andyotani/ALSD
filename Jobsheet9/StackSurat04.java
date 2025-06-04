@@ -1,11 +1,11 @@
-public class StackSurat25 {
-    Surat25[] stack;
+public class StackSurat04 {
+    Surat04[] stack;
     int size;
     int top;
 
-    StackSurat25(int size) {
+    StackSurat04(int size) {
         this.size = size;
-        stack = new Surat25[size];
+        stack = new Surat04[size];
         top = -1;
     }
 
@@ -17,7 +17,7 @@ public class StackSurat25 {
         return this.top == -1;
     }
 
-    void push(Surat25 s) {
+    void push(Surat04 s) {
         if (!isFull()) {
             top++;
             stack[top] = s;
@@ -26,9 +26,9 @@ public class StackSurat25 {
         }
     }
 
-    Surat25 pop() {
+    Surat04 pop() {
         if(!isEmpty()) {
-           Surat25 s = stack[top];
+           Surat04 s = stack[top];
             top--;
             return s; 
         } else {
@@ -37,7 +37,7 @@ public class StackSurat25 {
         }
     } 
 
-    Surat25 peek() {
+    Surat04 peek() {
         if (!isEmpty()) {
             return stack[top];
         } else {
