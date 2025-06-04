@@ -1,5 +1,3 @@
-package NEW;
-
 public class Sorting04 {
     int [] data;
     int jumData;

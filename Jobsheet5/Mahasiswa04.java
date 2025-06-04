@@ -1,5 +1,3 @@
-package NEW;
-
 public class Mahasiswa04 {
     String nim;
     String nama;
