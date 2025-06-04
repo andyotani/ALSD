@@ -68,15 +68,6 @@
 **Output**
 ![Screenshot](img/latihan1.png)
 
-![Screenshot](img/latihan2.png)
 
-![Screenshot](img/latihan3.png)
 
-![Screenshot](img/latihan4.png)
-
-![Screenshot](img/latihan5.png)
-
-![Screenshot](img/latihan6.png)
-
-![Screenshot](img/latihan7.png)
-
+p
