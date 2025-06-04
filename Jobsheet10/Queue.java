@@ -13,6 +13,7 @@ public class Queue {
     boolean isEmpty() {
         return size == 0;
     }
+    
 
     boolean isFull() {
         return size == max;
