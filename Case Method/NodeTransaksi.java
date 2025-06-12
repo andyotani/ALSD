@@ -9,3 +9,4 @@ class NodeTransaksi {
     this.next = next;
   }
 }
+    
